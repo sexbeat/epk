@@ -262,3 +262,29 @@ h1, h2, h3, h4, h5 {
     cursor: pointer;
     display: block;
 }
+
+.photo-content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.photo-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-content .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.photo-content:hover .hover-image {
+    opacity: 1;
+}
